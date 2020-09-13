@@ -24,33 +24,6 @@ window.addEventListener("scroll", function(e) {
   parallax.style.backgroundPositionY = offset*0.5 + "px";
 })
 
-const cardLength = 8
-let current = 0;
-const scrWidth = document.body.clientWidth
-const maxCards = parseInt(scrWidth/269)
-const extra = scrWidth-30-269*maxCards
-document.getElementById('tLeft').addEventListener("click", function() {
-  if (current<0){
-    current++
-    const container = document.getElementById('cardContainer')
-    container.classList.add('moveCard')
-    container.style.marginLeft = current*269 + "px";
-  }
-})
-document.getElementById('tRight').addEventListener("click", function() {
-  if (current > -cardLength+maxCards){
-    const container = document.getElementById('cardContainer')
-    current--
-    if (current+1 === 0){
-      container.style.marginLeft = -269 + extra + "px";
-    }
-    else {
-      container.style.marginLeft = current*269+extra + "px";
-    }
-    container.classList.add('moveCard')
-  }
-})
-
 
 let x = 0
 let scroller = document.getElementById("scroller")
@@ -67,3 +40,30 @@ if (!("ontouchstart" in document.documentElement)) {
     e.preventDefault()
   })
 }
+
+myID = document.getElementById("navbarvert");
+// horID = document.getElementById("navbarr");
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 15) {
+    myID.className = "d-block nav-pills animated fadeInLeft ml-2"
+  } else {
+    myID.className = "animated fadeOutLeft"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+// const vicons = document.getElementsByClassName("vicon")
+// for (let i = 0; i < vicons.length; i++) {
+//   vicons[i].onmouseover = function(e) {
+//     console.log(vicons[i].parentNode)
+//     vicons[i].parentNode.classList.add("activated")
+//   }
+// }
+// for (let i = 0; i < vicons.length; i++) {
+//   vicons[i].onmouseleave = function(e) {
+//     console.log(vicons[i].parentNode)
+//     vicons[i].parentNode.classList.remove("activated")
+//   }
+// }

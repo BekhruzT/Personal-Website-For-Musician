@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Oxygen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="MDB-Free_4.19.1\css\mdb.min.css">
   <link rel="stylesheet" href="MDB-Free_4.19.1\css\style.css">
@@ -42,11 +42,11 @@
         <nav class="nav-pills d-none" id="navbarvert">
           <div class="justify-content-end mr-lg-4 h-100" id="navel">
             <ul class="navbar-nav flex-column h-100 justify-content-between my-auto">
-              <li href="" class="nav-item"><a href="#carousel" class="nav-link"><i class="fas fa-car fa-lg"></i><h4 class="display-5 d-none " id="nav1">Carousel<span class="hidden">asdadadasdadasdsada</span></h4></a></li>
-              <li href="" class="nav-item"><a href="#badge-button" class="nav-link"><i class="far fa-star fa-lg"></i><h4 class="display-5 d-none " id="nav4">Stars<span class="hidden">asdadadasdadasdsada</span></h4></a></li>
-              <li href="" class="nav-item"><a href="#dropdowns-collapse" class="nav-link"><i class="fas fa-user-secret fa-lg"></i><h4 class="display-5 d-none " id="nav3">Biography<span class="hidden">asdadadasdadasdsada</span></h4></a></li>
-              <li href="" class="nav-item"><a href="#jumbotron" class="nav-link"><i class="fas fa-desktop fa-lg"></i><h4 class="display-5 d-none " id="nav2">Jumbo<span class="hidden">asdadadasdadasdsada</span></h4></a></li>
-              <li href="" class="nav-item"><a href="#music" class="nav-link"><i class="fas fa-music fa-lg"></i><h4 class="display-5 d-none " id="nav5">Music<span class="hidden">asdadadasdadasdsada</span></h4></a></li>
+              <li href="" class="nav-item"><a href="#secQuote" data-content="Home"><i class="fas fa-home fa-lg vicon"></i><h4></h4></a></li>
+              <li href="" class="nav-item"><a href="#secBio" data-content="Bio"><i class="fas fa-user-tie fa-lg vicon"></i><h4></h4></a></li>
+              <li href="" class="nav-item"><a href="#secMusic" data-content="Music"><i class="fas fa-music fa-lg vicon"></i><h4></h4></a></li>
+              <li href="" class="nav-item"><a href="#secEmpty" data-content="Empty"><i class="fas fa-trash fa-lg vicon"></i><h4></h4></a></li>
+              <li href="" class="nav-item"><a href="#secTest" data-content="Testimonials"><i class="fas fa-comments fa-lg vicon"></i><h4></h4></a></li>
             </ul>
           </div>
         </nav>
@@ -58,10 +58,35 @@
   <main >
     <section id="secQuote" class="d-flex text-center align-items-center justify-content-center">
       <!-- div>img#parallax -->
-      <blockquote class="text-white display-5" id="quote">
-        <h2 >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</h2>
-        <footer><h4> - IMADREAM2BE </h4></footer>
+      <blockquote class="text-white" id="quote">
+        <h2 >If you even dream of beating me, you'd better wake up and apologize.</h2>
+        <footer><h4> - Muhammad ALi </h4></footer>
       </blockquote>
+      <div class="runtext-container">
+      <div class="main-runtext">
+      <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+
+      <div class="holder">
+
+        &#183;
+
+       <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/Electric_Lighting_Act.jpg">Am I next</a>
+         &#183;
+       <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/receipt.jpg">Balling</a>
+          &#183;
+        <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/card.jpg">Free Niggas</a>
+          &#183;
+        <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/buildings.jpg" >Dreams and Nightmares</a>
+          &#183;
+        <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/paid_electrician.jpg">Rockstar</a>
+          &#183;
+        <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/solar_panels.jpg" >Congratulations</a>
+          &#183;
+        <a data-fancybox-group="gallery" class="fancybox leftRight" href="images/runtext/report.jpg" >I am not affraid</a>
+          &#183;
+      </marquee>
+      </div>
+      </div>
     </section>
 
     <section id="secBio">
@@ -134,122 +159,7 @@
 
     </section>
 
-    <section id="secTest">
-      <button class="btn" id="tLeft"><i class="fas fa-angle-left"></i></button>
-      <button class="btn" id="tRight"><i class="fas fa-angle-right"></i></button>
-      <div>
-        <div class="" id="cardContainer">
-          <div class="card col" id="james">
-            <div class="px-0">
-              <img src=".\Media\profile3.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">James</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="selena">
-            <div class="px-0">
-              <img src=".\Media\profile4.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Selena</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Lorem occaecat cupidatat  culpa qui offici aoccaecat cupidatat non proident, deserunt mollit anim id est laborum.</p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="ronaldo">
-            <div class="px-0">
-              <img src=".\Media\profile1.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Bekhruz</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Cristiano Ronaldo dos Santos Portuguese professional footballer who plays as a forward for Serie A club Juventus</p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="alex">
-            <div class="px-0">
-              <img src=".\Media\profile2.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Alex</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p> Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-              </blockquote>
-              <i class="fas fa-quote-right "></i>
-            </div>
-          </div>
-          <div class="card col" id="james">
-            <div class="px-0">
-              <img src=".\Media\profile3.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">James</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="selena">
-            <div class="px-0">
-              <img src=".\Media\profile4.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Selena</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Lorem occaecat cupidatat lpa qui offici aoccaecat cupidatat non proident, deserunt mollit anim id est laborum.</p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="ronaldo">
-            <div class="px-0">
-              <img src=".\Media\profile1.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Bekhruz</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p>Cristiano Ronaldo dos Santos Portuguese professional footballer who plays as a forward for Serie A club Juventus</p>
-              </blockquote>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="card col" id="alex">
-            <div class="px-0">
-              <img src=".\Media\profile2.png" alt="profile-sample6" class="profile mt-4" />
-              <h3 class="mt-4">Alex</h3>
-              <div class="triangle"></div>
-            </div>
-            <div class="card-body pt-5">
-              <blockquote>
-                <p> Ut enim ad minim veniam, qion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
-              </blockquote>
-              <i class="fas fa-quote-right "></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-
-    <section id="secFooter" class="">
+    <section id="secTest" class="">
       <figure id="scroller">
         <div class="card col" id="james">
           <div class="px-0">
@@ -277,7 +187,7 @@
             <i class="fas fa-quote-right"></i>
           </div>
         </div>
-        <div class="card col" id="ronaldo">
+        <div class="card col" id="ronal">
           <div class="px-0">
             <img src=".\Media\profile1.png" alt="profile-sample6" class="profile mt-4" />
             <h3 class="mt-4">Bekhruz</h3>
@@ -290,7 +200,7 @@
             <i class="fas fa-quote-right"></i>
           </div>
         </div>
-        <div class="card col" id="alex">
+        <div class="card col" id="ale">
           <div class="px-0">
             <img src=".\Media\profile2.png" alt="profile-sample6" class="profile mt-4" />
             <h3 class="mt-4">Alex</h3>
@@ -303,7 +213,7 @@
             <i class="fas fa-quote-right "></i>
           </div>
         </div>
-        <div class="card col" id="james">
+        <div class="card col" id="jame">
           <div class="px-0">
             <img src=".\Media\profile3.png" alt="profile-sample6" class="profile mt-4" />
             <h3 class="mt-4">James</h3>
@@ -325,6 +235,19 @@
           <div class="card-body pt-5">
             <blockquote>
               <p>Lorem occaecat cupidatat lpa qui offici aoccaecat cupidatat non proident, deserunt mollit anim id est laborum.</p>
+            </blockquote>
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+        <div class="card col" id="jam">
+          <div class="px-0">
+            <img src=".\Media\profile3.png" alt="profile-sample6" class="profile mt-4" />
+            <h3 class="mt-4">James</h3>
+            <div class="triangle"></div>
+          </div>
+          <div class="card-body pt-5">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
             </blockquote>
             <i class="fas fa-quote-right"></i>
           </div>
@@ -357,12 +280,26 @@
         </div>
       </figure>
     </section>
+
+    <section id="secFooter" class="">
+      <div>
+        <h1 class="display-4">IMADREAM2BE</h1>
+        <ul class="list-group list-group-horizontal " id="socialMedia">
+          <li class="list-group-item list-group-item-action"><a href="asdasd" class="fab fa-spotify fa-lg green-text"></a></li>
+          <li class="list-group-item list-group-item-action"><a href="asdasd" class="fab fa-youtube fa-lg red-text"></a></li>
+          <li class="list-group-item list-group-item-action"><a href="asdasd" class="fab fa-instagram fa-lg"></a></li>
+        </ul>
+        <h2 class="s">Reach out to Me</h2>
+        <a class="leftRight ml-0" data-content="myemail@gmail.com">myemail@gmail.com</a></p>
+      </div>
+    </section>
+
   </main>
 
 
   <script src="https://unpkg.com/wavesurfer.js"></script>
   <script src="utils.js">  </script>
-  <!-- <script type="module" src="utils2.js">  </script> -->
+  <script type="module" src="utils2.js">  </script>
   <script src="node_modules\three\build\three.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
